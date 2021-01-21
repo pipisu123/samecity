@@ -1,16 +1,299 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "微同城系统"
+				
 			}
-		}
-	],
+		},
+		{
+			"path":"pages/category/category",
+			"style":{
+				
+			}
+		},
+		{
+			"path":"pages/public/public",
+			"style":{
+			
+			}
+		},
+		{
+			"path":"pages/business/business",
+			"style":{
+				
+			}
+		},
+		{
+            "path" : "pages/man/man",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "招聘人才",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/house/house",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "房子出售",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+            "path" : "pages/PubRecruitment/PubRecruitment",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "招聘发布",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+            "path" : "pages/PubResume/PubResume",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人简历发布",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/PubCompany/PubCompany",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        
+        ,{
+            "path" : "pages/me/me",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "招聘详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/companyDetail/companyDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "公司详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/CreateResume/CreateResume",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "创建简历",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/CreateCompany/CreateCompany",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "创建公司信息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/myResume/myResume",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的简历",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/update/update",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        ,{
+            "path" : "pages/ResumeDeatil/ResumeDeatil",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/myCompany/myCompany",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的公司",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        ,{
+            "path" : "pages/myCompany/UpdateCompany/UpdateCompany",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/PubRecruitment/ShowRcruitment/ShowRcruitment",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/PubRecruitment/ToComfirmPublic/ToComfirmPublic",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mall/mall",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mall/Me/Me",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/man/PersonalCenter/myCollection/myCollection",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的收藏",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/PubRecruitment/ShowPerson/ShowPerson",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/PubRecruitment/ToComfirmPerson/ToComfirmPerson",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/man/PersonalCenter/myPosition/myPosition",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#5785E5",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+	   "color":"#2C405A",
+	   "selectedColor":"#333333",
+	   "borderStyle":"white",
+	   "backgroundColor":"#B6B6B6 ",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"首页",
+				"iconPath":"static/main_off.png",
+				"selectedIconPath":"static/main_offa.png"
+				
+			},
+			{
+				"pagePath":"pages/category/category",
+				"text":"分类信息",
+				"iconPath":"static/catetory-b.png",
+				"selectedIconPath":"static/catetory-c.png"
+			},
+			{
+				"pagePath":"pages/public/public",
+				"text":"发布",
+				"iconPath":"static/new.png",
+				"selectedIconPath":"static/new.png"
+			},
+			{
+				"pagePath":"pages/business/business",
+				"text":"商家",
+				"iconPath":"static/myself_on.png",
+				"selectedIconPath":"static/myself_ona.png"
+			},
+			{
+				"pagePath":"pages/me/me",
+				"text":"我的",
+				"iconPath":"static/myself_on.png",
+				"selectedIconPath":"static/myself_ona.png"
+			}
+			
+		]
 	}
 }
