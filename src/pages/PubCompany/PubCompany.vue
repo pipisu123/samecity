@@ -1,6 +1,6 @@
 <template>
 	<view>
-		我在公司修改了东西啊啊啊啊啊第三代啊
+		<button type="default">刹撒差的撒谎</button>
 	</view>
 </template>
 
