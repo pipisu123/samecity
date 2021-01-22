@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 	<view class="main">
 		<view class="input" :style="disabled?'background-color:#f5f7fa':''">
 			<input @click="showModal" v-model="bValue" :style="disabled?'color:#c0c4cc':''" :placeholder="placeholder" disabled/>
@@ -20,10 +21,24 @@
 				</view>
 			</view>
 		</view>
+=======
+	<view>
+		
+		<view class="search">
+			<u-search placeholder="请输入房屋信息"></u-search>
+		</view>
+	<Grid></Grid>
+	<swipper></swipper>
+	<fz></fz>
+	<ym></ym>
+	<bar></bar>
+		
+>>>>>>> ce03b5c1531d344f691621a14ba66873bdaab61f
 	</view>
 </template>
 
 <script>
+<<<<<<< HEAD
 	import {Function} from './eval5.min.js';
 	export default {
 		data() {
@@ -319,3 +334,52 @@
 		}
 	}
 </style>
+=======
+	import bar from './bar/bar.vue';
+	import Grid from './bar/Grid.vue'
+	import swipper from '../components/swipper.vue'
+	import fz from './bar/fz.vue'
+	import ym from './bar/ym.vue'
+	
+	
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		 components: {
+		          bar,
+				  Grid,
+				  swipper,
+				  fz,
+				  ym
+				 
+				
+				 
+		        },
+		methods: {
+			hreftwo(){
+				this.$router.push({
+					path:'/bar/fb.vue'
+				})
+			}
+			
+			
+		}
+	}
+</script>
+
+<style lang="scss">
+	.search{
+		border-color: #fff;
+	    position: fixed;
+	     left: 0;
+	     right: 0;
+	     top: 0;
+	     z-index: 9;
+		 background-color: #5785E5;
+	     padding-bottom: 10rpx;
+	}		
+</style>
+>>>>>>> ce03b5c1531d344f691621a14ba66873bdaab61f
