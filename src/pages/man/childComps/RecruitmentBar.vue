@@ -186,7 +186,7 @@
 				this.input2 = '';
 				e.map((val, index) => {
 					this.input2 += this.input2 == '' ? val.label : '/' + val.label;
-					
+					this.$emit("industryselect",this.input2)
 				})
 			}
 		}

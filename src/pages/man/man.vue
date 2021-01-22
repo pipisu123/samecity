@@ -14,7 +14,7 @@
 			<!-- 广告通知 -->
 			<notice></notice>
 			<!-- 条件选择招聘列表 -->
-			<RecruitmentBar @cityChange="cityChange" @wagesChange="wagesChange" @worktype="worktype"></RecruitmentBar>
+			<RecruitmentBar @cityChange="cityChange" @wagesChange="wagesChange" @worktype="worktype" @industryselect="industryselect"></RecruitmentBar>
 			<!-- 招聘发布列表 -->
 			<view>
 				<view v-if="list.length ===0">
@@ -238,6 +238,29 @@
 				this.work_types = data
 				console.log(res.data.data.user_Recruitments)
 				this.list = res.data.data.user_Recruitments;
+			},
+			// 根据行业查询
+			async industryselect(data){
+				const res = await this.$myRequest({
+					url:'findRecruitment',
+					dataType: "json",
+					header: {
+					        'content-type': 'application/json', 
+					        },
+					data:JSON.stringify({ 
+						"industry": data,
+						"address":this.city,
+						"work_types":this.work_types,
+						"wages":this.wages,
+						"paging":{
+							"page":this.page
+						}
+						
+					}),
+					method: 'POST'
+				})
+				this.list = res.data.data.user_Recruitments;
+				this.industry = data
 			},
 			// 根据工资来查询
 			async wagesChange(data){
